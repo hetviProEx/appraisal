@@ -1,0 +1,82 @@
+const AppConst = {
+  st: "*",
+  apprTemp: "Appraisal Template",
+  status: "Status",
+  forEmp: "For Employee",
+  empName: "Employee Name",
+  dep: "Department",
+  desg: "Designation",
+  date: "Date",
+  timePer: "Time Period",
+  startDate: "Start Date",
+  endDate: "End Date",
+  foEmpName: "Form Employee Name",
+  kraType: "KRA Type",
+  no: "No.",
+  kra: "KRA",
+  kpi: "KPI",
+  weight: "Weightage (%)",
+  score: "Score (0-5)",
+  doc: "Document",
+  remark: "Remarks",
+  remarkAlert:
+    "Any other remarks, noteworthy effort that should go in the records.",
+  comp: "Company*",
+};
+const TData = [
+  {
+    sr: 1,
+    kra: "Expansion",
+    kpi: "",
+    waight: "40%",
+    score: 4,
+    scoreEarned: 0,
+    doc: true,
+  },
+  {
+    sr: 2,
+    kra: "Profitability",
+    kpi: "",
+    waight: "30%",
+    score: 3,
+    scoreEarned: 0,
+    doc: false,
+  },
+  {
+    sr: 3,
+    kra: "Team Retention till GM Level + Team Engagement",
+    kpi: "",
+    waight: "20%",
+    score: 2,
+    scoreEarned: 0,
+    doc: true,
+  },
+  {
+    sr: 4,
+    kra: "Safety & Security",
+    kpi: "",
+    waight: "10%",
+    score: 4,
+    scoreEarned: 0,
+    doc: false,
+  },
+  {
+    sr: 5,
+    kra: "Market Based Innovation",
+    kpi: "",
+    waight: "10%",
+    score: 4,
+    scoreEarned: 0,
+    doc: true,
+  },
+];
+const kraDrop = [
+  "KRA Type 1",
+  "KRA Type 2",
+  "KRA Type 3",
+  "KRA Type 4",
+  "KRA Type 5",
+];
+const tmPr = ["1 Month", "6 Month", "12 Month"];
+
+export { AppConst, TData, tmPr, kraDrop };
