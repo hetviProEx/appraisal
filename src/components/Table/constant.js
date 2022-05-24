@@ -24,5 +24,7 @@ const PageConst = {
   sco2: "Employee2",
   finScor: "Final Score",
   doc: "Document",
+  email: "Email",
+  mob: "Mobile No.",
 };
 export { PageConst };

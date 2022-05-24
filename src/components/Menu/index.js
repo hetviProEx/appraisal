@@ -55,8 +55,8 @@ class MenuComponent extends Component {
       ? it
         ? TlItem
         : JSON.parse(auth).user === "Admin"
-          ? MenuItem
-          : EmpItem
+        ? MenuItem
+        : EmpItem
       : [];
     return men.map((a, i) => {
       if (!it)
@@ -66,7 +66,7 @@ class MenuComponent extends Component {
             icon={a.icon}
             className={
               path.toLowerCase() === a.name.toLowerCase() ||
-                (path === "" && i === 0)
+              (path === "" && i === 0)
                 ? "active"
                 : ""
             }
@@ -83,7 +83,7 @@ class MenuComponent extends Component {
                 icon={x.icon}
                 className={
                   path.toLowerCase() === x.name.toLowerCase() ||
-                    (path === "" && i === 0 && k === 0)
+                  (path === "" && i === 0 && k === 0)
                     ? "ant-menu-item-selected"
                     : ""
                 }

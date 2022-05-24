@@ -1,12 +1,8 @@
 import styled from "styled-components";
-import { size } from "App/device";
 
 const MenuStyle = styled.div`
   min-width: 15em;
   // border-right:1px solid #f0f0f0;
-  @media ${size["tablet-max"]} {
-    display: none;
-  }
   .menuTop {
     display: flex;
     padding: 0.5em 1em;

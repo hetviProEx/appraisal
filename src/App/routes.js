@@ -43,18 +43,18 @@ const routes = [
     AuthRoute: true,
     component: AddAppraisal,
   },
-  {
-    path: "/edit-employee",
-    exact: true,
-    AuthRoute: true,
-    component: AddAppraisal,
-  },
-  {
-    path: "/profile",
-    exact: true,
-    AuthRoute: true,
-    component: Profile,
-  },
+  // {
+  //   path: "/edit-employee",
+  //   exact: true,
+  //   AuthRoute: true,
+  //   component: AddAppraisal,
+  // },
+  // {
+  //   path: "/profile",
+  //   exact: true,
+  //   AuthRoute: true,
+  //   component: Profile,
+  // },
   {
     path: "/basic-profile",
     exact: true,
@@ -74,7 +74,7 @@ const routes = [
     component: MyAppraisal,
   },
   {
-    path: "/employees",
+    path: "/employee",
     exact: true,
     AuthRoute: true,
     component: Employee,
@@ -97,7 +97,7 @@ const routes = [
     AuthRoute: true,
     component: Master
   },
- 
+
 ];
 const PrivateRoute = ({ component: Component, ...rest }) => {
   if (getAuthUserID()) {

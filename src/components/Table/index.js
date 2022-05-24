@@ -106,14 +106,14 @@ class TableUI extends Component {
                 sorter={(a, b) => a.empName.localeCompare(b.empName)}
               />
               <Column
-                title={PageConst.des}
-                dataIndex={"designation"}
-                sorter={(a, b) => a.designation.localeCompare(b.designation)}
+                title={PageConst.email}
+                dataIndex={"email"}
+                sorter={(a, b) => a.email.localeCompare(b.email)}
               />
               <Column
-                title={PageConst.dept}
-                dataIndex={"Department"}
-                sorter={(a, b) => a.Department.localeCompare(b.Department)}
+                title={PageConst.mob}
+                dataIndex={"mob"}
+                sorter={(a, b) => a.mob.localeCompare(b.mob)}
               />
             </>
           )}
@@ -312,21 +312,21 @@ class TableUI extends Component {
             src={eye}
             preview={false}
             width={18}
-            // onClick={() => this.props.showModal(record.userid)}
+          // onClick={() => this.props.showModal(record.userid)}
           />
           <Image
             className="pointer"
             src={editPen}
             preview={false}
             width={15}
-            // onClick={() =>this.props.getEditId("/edit-" + type + "/" + window.btoa(record.userid))}
+          // onClick={() =>this.props.getEditId("/edit-" + type + "/" + window.btoa(record.userid))}
           />
           <Image
             className="pointer"
             src={fillClose}
             preview={false}
             width={15}
-            // onClick={() => this.props.removecol(record.userid)}
+          // onClick={() => this.props.removecol(record.userid)}
           />
         </div>
       );

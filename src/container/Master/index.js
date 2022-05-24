@@ -9,7 +9,7 @@ import { DesDeta, DepartData, KraDeta, PeriodDeta } from "./constant";
 class Master extends Component {
   constructor(props) {
     super(props);
-    this.state = {visible: false,title: ""};
+    this.state = { visible: false, title: "" };
   }
   toggleModal = (val) => {
     try {

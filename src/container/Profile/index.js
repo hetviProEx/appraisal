@@ -33,10 +33,10 @@ class Profile extends Component {
       <ProfileStyle>
         <Header />
         <Row gutter={24} className="rowDiv">
-          <Col xs={24} sm={24} md={8} lg={8} xl={4} className="manuDiv">
+          <Col xs={24} sm={24} md={12} lg={12} xl={4} className="manuDiv">
             <Menu />
           </Col>
-          <Col xs={24} sm={24} md={16} lg={16} xl={20} className="antDiv">
+          <Col xs={24} sm={24} md={12} lg={12} xl={20} className="antDiv">
             <div className="pDiv">
               <h2 className="header">{ProConst.pdetail}</h2>
               <Row gutter={24}>

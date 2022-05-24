@@ -21,6 +21,9 @@ const ModalStyle = styled.div`
           background: #f4f5f6;
           padding: 5px 5px;
         }
+        .genDiv{
+          z-index:18;
+        }
       }
       .bottomDiv {
         display: flex;

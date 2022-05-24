@@ -12,6 +12,7 @@ import {
 
 const MenuItem = [
   { name: "Home", icon: <CalculatorOutlined /> },
+  { name: "Employee", icon: <BookOutlined /> },
   { name: "Basic Profile", icon: <UserOutlined /> },
   { name: "Master", icon: <CheckCircleOutlined /> },
   { name: "KRA", icon: <AppstoreAddOutlined /> },
@@ -30,7 +31,7 @@ const TlItem = [
     name: "Appraisal",
     icon: <BookOutlined />,
     suboption: [
-      { name: "Employees", icon: <ProfileOutlined /> },
+      // { name: "Employee", icon: <ProfileOutlined /> },
       { name: "Add Appraisal", icon: <AppstoreAddOutlined /> },
     ],
   },

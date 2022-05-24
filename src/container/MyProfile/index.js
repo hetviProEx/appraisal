@@ -38,7 +38,7 @@ class MyProfile extends Component {
                 <Col xs={24} sm={24} md={12} lg={12} xl={12} className="anime">
                   <Label title={ProConst.emp} className="label" />
                   <Input tabIndex="1" className="input" placeholder="emp003" />
-                </Col>
+                </Col>{" "}
                 <Col xs={24} sm={24} md={12} lg={12} xl={12} className="anime">
                   <Label title={ProConst.flname} className="label" />
                   <Input tabIndex="2" className="input" placeholder="Jai" />

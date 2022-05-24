@@ -28,7 +28,7 @@ const FormWrapper = styled.div`
     margin: 0;
     -webkit-appearance: none;
     background: #f4f5f6; //#fff;
-    border: 0;
+    border: 1;
     height: 34px;
     font-size: 15px;
     font-weight: 300;
