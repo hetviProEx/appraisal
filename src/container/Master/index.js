@@ -75,7 +75,7 @@ class Master extends Component {
               <Col xs={24} sm={24} md={24} lg={12} xl={12}>
                 <div className="secDiv">
                   <div className="headDiv">
-                    <h2>{"Period"}</h2>
+                    <h2>{"Period"}</h2>/
                     <div
                       className="btnDiv"
                       onClick={() => this.toggleModal("Period")}
@@ -86,6 +86,7 @@ class Master extends Component {
                   <Table data={PeriodDeta} type="Period" />
                 </div>
               </Col>
+
             </Row>
           </Col>
         </Row>

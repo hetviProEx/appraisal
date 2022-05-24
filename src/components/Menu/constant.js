@@ -13,7 +13,7 @@ import {
 const MenuItem = [
   { name: "Home", icon: <CalculatorOutlined /> },
   { name: "Employee", icon: <BookOutlined /> },
-  { name: "Basic Profile", icon: <UserOutlined /> },
+  // { name: "Basic Profile", icon: <UserOutlined /> },
   { name: "Master", icon: <CheckCircleOutlined /> },
   { name: "KRA", icon: <AppstoreAddOutlined /> },
   { name: "Report", icon: <BookOutlined /> },

@@ -39,7 +39,7 @@ class Employee extends Component {
           <Col xs={24} sm={24} md={12} lg={12} xl={4} className="manuDiv">
             <Menu />
           </Col>
-          <Col xs={24} sm={24} md={12} lg={12} xl={20} className="antDiv anime">
+          <Col xs={24} sm={24} md={12} lg={12} xl={20} className="anime">
             <Row gutter={24} className="secMain">
               <div className="secDiv">
                 {/* <div className="tDiv anime">

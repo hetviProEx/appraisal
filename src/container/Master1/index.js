@@ -40,19 +40,19 @@ class Master extends Component {
               count === 1
                 ? DepartData
                 : count === 2
-                ? KraDeta
-                : count === 3
-                ? PeriodDeta
-                : DesDeta
+                  ? KraDeta
+                  : count === 3
+                    ? PeriodDeta
+                    : DesDeta
             }
             type={
               count === 1
                 ? "dept"
                 : count === 2
-                ? "kr"
-                : count === 3
-                ? "Period"
-                : "des"
+                  ? "kr"
+                  : count === 3
+                    ? "Period"
+                    : "des"
             }
           />
         </div>

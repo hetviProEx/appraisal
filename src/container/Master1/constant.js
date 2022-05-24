@@ -3,6 +3,10 @@ const TabsConst = [
   { name: "Department" },
   { name: "KRA Type" },
   { name: "Period" },
+  { name: "Location" },
+  { name: "Zone" },
+  { name: "Vertical" },
+
 ];
 const DesDeta = [
   { sr: 1, name: "Marketing Executive" },
