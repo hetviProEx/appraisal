@@ -15,8 +15,8 @@ const StyleContainer = styled.div`
           background-color: #fff;
           border-radius: 1em;
           padding: 1.5em;
-          overflow-x: auto;
-          // margin-bottom: 1em;
+          height:83vh;
+          overflow-y: auto;
           margin:1em;
           min-height: 34em;
           .headDiv {
@@ -40,34 +40,8 @@ const StyleContainer = styled.div`
           }
         }
       }
-      // .pDiv {
-      //   box-shadow: 0 0 10px rgb(0 0 0 / 20%);
-      //   background-color: #fff;
-      //   border-radius: 1em;
-      //   padding: 1.5em;
-      //   margin: 1em;
-      //   .tDiv {
-      //     display: flex;
-      //     .btnDiv {
-      //       margin-left: auto;
-      //       cursor: pointer;
-      //       background: ${Theme.mainColor};
-      //       padding: 0 10px;
-      //       display: flex;
-      //       align-item: center;
-      //       min-width: 5em;
-      //       align-items: center;
-      //       justify-content: center;
-      //       border-radius: 10px;
-      //       height: 2.5em;
-      //       color: #fff;
-      //       .anticon {
-      //         margin-right: 10px;
-      //       }
-      //     }
-      //   }
-      // }
     }
   }
+  
 `;
 export { StyleContainer };

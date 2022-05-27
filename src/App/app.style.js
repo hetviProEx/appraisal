@@ -40,6 +40,10 @@ const GlobalStyle = createGlobalStyle`
   animation-fill-mode: forwards;
   transform: translateX(50px);     
 }
+.form-error {
+  color: #e81c1c;
+}
+
 @-webkit-keyframes anime-animation {
   to {
     opacity: 1;

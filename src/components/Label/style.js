@@ -9,5 +9,8 @@ const FormWrapper = styled.div`
     line-height: 15px;
     display: block;
   }
+  .empty {
+    color: #e81c1c;
+  }
 `;
 export { FormWrapper };

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Table, Image } from "antd";
-import { FileFilled, PlusCircleOutlined } from "@ant-design/icons";
+import { FileFilled, PlusCircleOutlined, EyeOutlined, EditOutlined, DeleteOutlined } from "@ant-design/icons";
 
 import TableStyle from "./style";
 import { PageConst } from "./constant";
@@ -8,8 +8,22 @@ import { Input } from "components/Form";
 import { eye, editPen, fillClose } from "components/Images";
 const { Column } = Table;
 class TableUI extends Component {
+
+
+  masterAction = (a, typex) => {
+    try {
+      return (<div className="actionUI">
+        <div className="actionDiv"><EyeOutlined /></div>
+        <div className="actionDiv"><EditOutlined /></div>
+        <div className="actionDiv"><DeleteOutlined /></div>
+      </div>);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   columnUI = () => {
-    const { type } = this.props;
+    const { type, showAction } = this.props;
     try {
       return (
         <>
@@ -114,6 +128,49 @@ class TableUI extends Component {
                 title={PageConst.mob}
                 dataIndex={"mob"}
                 sorter={(a, b) => a.mob.localeCompare(b.mob)}
+              />
+            </>
+          )}
+          {type === "appraisal" && (
+            <>
+              <Column
+                title={PageConst.empCode}
+                dataIndex={"empCode"}
+                sorter={(a, b) => a.empCode.localeCompare(b.empCode)}
+              />
+              <Column
+                title={PageConst.empName}
+                dataIndex={"empName"}
+                sorter={(a, b) => a.empName.localeCompare(b.empName)}
+              />
+              <Column
+                title={PageConst.he}
+                dataIndex={"he"}
+                sorter={(a, b) => a.he.localeCompare(b.he)}
+              />
+              <Column
+                title={PageConst.weights}
+                dataIndex={"weights"}
+                sorter={(a, b) => a.weights.localeCompare(b.weights)}
+              />
+            </>
+          )}
+          {type === "kra & kpi" && (
+            <>
+              <Column
+                title={PageConst.kra}
+                dataIndex={"kra"}
+                sorter={(a, b) => a.kra.localeCompare(b.kra)}
+              />
+              <Column
+                title={PageConst.kpi}
+                dataIndex={"kpi"}
+                sorter={(a, b) => a.kpi.localeCompare(b.kpi)}
+              />
+              <Column
+                title={PageConst.weights}
+                dataIndex={"weights"}
+                sorter={(a, b) => a.weights.localeCompare(b.weights)}
               />
             </>
           )}
@@ -277,6 +334,13 @@ class TableUI extends Component {
                 render={(record, i) => <PlusCircleOutlined />}
               />
             </>
+          )}
+          {showAction && (
+            <Column
+              width={150}
+              title={PageConst.action}
+              render={(record, i) => this.masterAction(record, type)}
+            />
           )}
         </>
       );

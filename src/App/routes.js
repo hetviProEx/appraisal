@@ -8,6 +8,7 @@ import AddAppraisal from "container/AppraisalAddEdit";
 import MyAppraisal from "container/MyAppraisal";
 import MyProfile from "container/MyProfile";
 import Employee from "container/Employee";
+import EmployeeAdd from "container/EmployeseAddEdit";
 import KRAType from "container/KRAType";
 import PageLoader from "components/PageLoader";
 import Reports from "container/Reports";
@@ -78,6 +79,12 @@ const routes = [
     exact: true,
     AuthRoute: true,
     component: Employee,
+  },
+  {
+    path: "/employee/new",
+    exact: true,
+    AuthRoute: true,
+    component: EmployeeAdd,
   },
   {
     path: "/kra",

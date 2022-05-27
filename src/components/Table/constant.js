@@ -26,5 +26,6 @@ const PageConst = {
   doc: "Document",
   email: "Email",
   mob: "Mobile No.",
+  he: "Hierarchy",
 };
 export { PageConst };

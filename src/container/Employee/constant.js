@@ -41,5 +41,18 @@ const TData = [
     email: "Hardik@gmail.com",
     mob: "8528529636",
   },
+  {
+    sr: 7,
+    empCode: "HR-EMP-00006",
+    empName: "Lareb Bhatt",
+    email: "Hardik@gmail.com",
+    mob: "8528529636",
+  }, {
+    sr: 8,
+    empCode: "HR-EMP-00006",
+    empName: "Lareb Bhatt",
+    email: "Hardik@gmail.com",
+    mob: "8528529636",
+  },
 ]
 export { TData };

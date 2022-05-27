@@ -55,6 +55,7 @@ const SelectContainer = styled.div`
   .empty {
     .ant-select-selector {
       border: 1px solid #e81c1c;
+      box-shadow: 0 0 7px red !important;
     }
   }
   &.default {

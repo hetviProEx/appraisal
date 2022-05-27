@@ -57,6 +57,15 @@ const FormWrapper = styled.div`
       font-size: 14px;
     }
   }
+
+  .empty {
+    border: 1px solid #e81c1c;
+    box-shadow: 0 0 10px red !important;
+  }
+  .empty-field {
+    border: 1px solid #e81c1c;
+  }
+
   input::-webkit-outer-spin-button,
   input::-webkit-inner-spin-button {
     -webkit-appearance: none;

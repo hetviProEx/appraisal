@@ -49,7 +49,8 @@ class Employee extends Component {
                   <h2>{"List of Employees"}</h2>
                   <div
                     className="btnDiv"
-                    onClick={() => this.toggleModal("Employee")}
+                    // onClick={() => this.toggleModal("Employee")}
+                    onClick={() => this.props.history.push("/employee/new")}
                   >
                     <PlusOutlined />
                   </div>
@@ -58,19 +59,20 @@ class Employee extends Component {
                   data={TData}
                   type="emp"
                   redirect={() => this.props.history.push("/edit-employee")}
+                  showAction
                 />
               </div>
             </Row>
           </Col>
 
         </Row>
-        {visible && (
+        {/* {visible && (
           <AddModal
             onOk={this.toggleModal}
             onCancel={this.toggleModal}
             title={"Employees"}
           />
-        )}
+        )} */}
       </StyleContainer >
     );
   }
